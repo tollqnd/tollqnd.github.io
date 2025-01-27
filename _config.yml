@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Your awesome title
+title: tollqnd.github.io
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
@@ -26,14 +26,16 @@ description: >- # this means to ignore newlines until "baseurl:"
   Google search results) and in your feed.xml site description.
 #baseurl: /tollqnd.github.io/ # the subpath of your site, e.g. /blog
 url: "https://tollqnd.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+twitter_username: tollqnd
+github_username:  tollqnd
 
 # Build settings
-remote_theme: pages-themes/midnight@v0.2.0
+remote_theme: mmistakes/minimal-mistakes@4.26.2
 plugins:
   - jekyll-feed
   - jekyll-remote-theme
+  - jekyll-include-cache
+minimal_mistakes_skin    : "contrast"
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -54,3 +56,29 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+# Site Author
+author:
+  name             : "Tom J. Holland"
+  avatar           : "/assets/images/home_photo.jpg"
+  bio              : "Electronic musician, hobbyist programmer and level designer. Computer and game enthusiast."
+  location         : "Bristol, U.K"
+  email            :
+  
+tag_archive:
+  type: liquid
+  path: /tags/
+  
+# Defaults
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: false
+      comments: false
+      share: false
+      related: false
