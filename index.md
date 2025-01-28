@@ -2,11 +2,30 @@
 # Feel free to add content and custom Front Matter to this file.
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
-layout: single
-title: About Me
+layout: splash
+title: Tom J. Holland
 author_profile: true
 classes: wide
----
-It's tough to know where to start! I'm a fan of all things computers and have always loved creating things. I studied electronic music production at university and graduated with a first Bachelor of Arts (Honours) where I created all sorts of unique audio projects. In my free time I program game mods in Java and enjoy creating advanced gameplay areas in the Source 2 engines. 
+header:
+  overlay_image: assets/images/splash.png
+  overlay_filter: linear-gradient(rgba(255, 0, 0, 0.0), rgba(37, 42, 52, 1))
+excerpt: 'Musician, Level Designer and Programmer'
+feature_row:
+  - image_path: /assets/images/splash.png
+    alt: "placeholder image 1"
+    title: "Placeholder 1"
+    excerpt: "This is some sample content that goes here with **Markdown** formatting."
+  - image_path: /assets/images/splash.png
+    alt: "placeholder image 2"
+    title: "Placeholder 2"
+    excerpt: "This is some sample content that goes here with **Markdown** formatting."
+  - image_path: /assets/images/splash.png
+    title: "Placeholder 3"
+    excerpt: "This is some sample content that goes here with **Markdown** formatting."
+  - image_path: /assets/images/splash.png
+    title: "Placeholder 4"
+    excerpt: "This is some sample content that goes here with **Markdown** formatting."
 
-Because of the diversity of my interests, you can easily filter my projects by tag which should allow you to find what you might be interested in.
+---
+
+{% include feature_row %}
