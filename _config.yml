@@ -38,6 +38,7 @@ plugins:
 minimal_mistakes_skin    : "dark"
 
 permalink: none
+locale: "en-GB"
 
 # Exclude from processing.
 # The following items will not be processed, by default.
