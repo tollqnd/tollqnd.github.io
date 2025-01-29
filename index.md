@@ -12,14 +12,14 @@ feature_row1:
   - image_path: /assets/images/sample.png
     title: "Audio"
     excerpt: "sample"
-    url: "/audio/"
+    url: "/audio"
     btn_label: "Go"
     btn_class: "btn--inverse"
 feature_row2:
   - image_path: /assets/images/sample.png
     title: "Level Design"
     excerpt: "sample"
-    url: "/level_design/"
+    url: "/level_design"
     btn_label: "Go"
     btn_class: "btn--inverse"
 ---
