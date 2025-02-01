@@ -3,26 +3,24 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: splash
-title: Tom J. Holland
+title: TOM J. HOLLAND
 header:
-  overlay_image: assets/images/splash.jpg
-  overlay_filter: linear-gradient(rgba(255, 0, 0, 0.0), rgba(37, 42, 52, 1))
+  overlay_image: assets/images/home_header.jpg
+  overlay_filter: linear-gradient(rgba(255, 0, 0, 0), rgba(33, 33, 33, 1))
 excerpt: 'Musician, Level Designer and Programmer'
-feature_row1:
-  - image_path: /assets/images/sample.png
+feature_row:
+  - image_path: /assets/images/audio.png
     title: "Audio"
-    excerpt: "sample"
     url: "/audio"
-    btn_label: "Go"
-    btn_class: "btn--inverse"
-feature_row2:
-  - image_path: /assets/images/sample.png
+  - image_path: /assets/images/level_design.jpg
     title: "Level Design"
-    excerpt: "sample"
     url: "/level_design"
-    btn_label: "Go"
-    btn_class: "btn--inverse"
 ---
 
-{% include feature_row id="feature_row1" type="left" %}
-{% include feature_row id="feature_row2" type="right" %}
+{% include feature_row_image_only %} {: .text-center}
+
+[//]: # [![audio](/assets/images/home_thumb_audio.png)](/audio) 
+ 
+[//]: # [![level design](/assets/images/home_thumb_level_design.png)](/level_design)
+ 
+ 
