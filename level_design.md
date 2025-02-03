@@ -1,6 +1,7 @@
 ---
 layout: splash
 title: Level Design Projects
+permalink: /level_design/
 header:
   # overlay_color: "#252a34"
   overlay_image: assets/images/level_design/header.png

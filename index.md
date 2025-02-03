@@ -11,10 +11,10 @@ excerpt: 'Musician, Level Designer and Programmer'
 feature_row:
   - image_path: /assets/images/audio.png
     title: "Audio"
-    url: "/audio"
+    url: "/audio/"
   - image_path: /assets/images/level_design.jpg
     title: "Level Design"
-    url: "/level_design"
+    url: "/level_design/"
 ---
 
 {% include image_feature_row %} {: .text-center}

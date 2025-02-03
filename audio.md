@@ -1,6 +1,7 @@
 ---
 layout: splash
 title: Audio Projects
+permalink: /audio/
 header:
   # overlay_color: "#252a34"
   overlay_image: assets/images/audio/header.png
