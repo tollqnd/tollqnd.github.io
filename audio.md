@@ -16,4 +16,4 @@ feature_row:
     title: "Random Glitch and Audiovisual Composition"
     url: "/"
 ---
-{% include feature_row_image_only %}
+{% include image_feature_row %}

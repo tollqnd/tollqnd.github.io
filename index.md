@@ -17,7 +17,7 @@ feature_row:
     url: "/level_design"
 ---
 
-{% include feature_row_image_only %} {: .text-center}
+{% include image_feature_row %} {: .text-center}
 
 [//]: # [![audio](/assets/images/home_thumb_audio.png)](/audio) 
  
