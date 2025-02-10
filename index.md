@@ -14,7 +14,7 @@ feature_row:
     url: "/audio/"
   - image_path: /assets/images/level_design.jpg
     title: "Level Design"
-    url: "/level_design/"
+    url: "/level-design/"
   - image_path: /assets/images/mods.png
     title: "Mods"
     url: "https://www.curseforge.com/members/f1ashfyre/projects"
@@ -22,9 +22,3 @@ feature_row:
 ---
 
 {% include image_feature_row %} {: .text-center}
-
-[//]: # [![audio](/assets/images/home_thumb_audio.png)](/audio) 
- 
-[//]: # [![level design](/assets/images/home_thumb_level_design.png)](/level_design)
- 
- 
