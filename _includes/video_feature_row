@@ -8,19 +8,13 @@
 
   {% for f in feature_row %}
     <div class="feature__item{% if include.type %}--{{ include.type }}{% endif %}">
-      <div class="archive__item">
-        {% if f.image_path %}
-          <div class="archive__item-teaser">
-            <iframe width="560" 
-			  height="315" 
-			  src="{{f.youtube_link}}" 
-			  title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-			</iframe>
+      <div class="archive__item" style="width: 100%;">
+        <div class="archive__item-teaser">
+			  <iframe width="560" height="315" src="{{f.youtube_link}}"  title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             {% if f.image_caption %}
               <span class="archive__item-caption">{{ f.image_caption | markdownify | remove: "<p>" | remove: "</p>" }}</span>
             {% endif %}
-          </div>
-        {% endif %}
+        </div>
 
         <div class="archive__item-body">
           {% if f.title %}
