@@ -8,6 +8,9 @@
 
   {% for f in feature_row %}
     <div class="feature__item{% if include.type %}--{{ include.type }}{% endif %}">
+	  {% if include.type != "center %}
+	    <hr>
+	  {% endif %}
       <div class="archive__item">
 	    <div class="archive__item-body">
           {% if f.title %}
