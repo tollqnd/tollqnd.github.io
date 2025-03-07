@@ -21,9 +21,7 @@
 title: tollqnd.github.io
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Portfolio of Tom J. Holland
 #baseurl: /tollqnd.github.io/ # the subpath of your site, e.g. /blog
 url: "https://tollqnd.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: tollqnd
@@ -85,3 +83,18 @@ defaults:
       comments: false
       share: false
       related: false
+
+footer:
+  links:
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/tollqnd"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/tollqnd"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/tom-h-29094b207/"
+
+atom_feed:
+  hide: true

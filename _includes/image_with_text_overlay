@@ -1,0 +1,30 @@
+<style>
+.container {
+  position: relative;
+  text-align: right;
+  color: white;
+}
+
+.text-container {
+  width: 100%;
+  height: 200px;
+  background-color: green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.centered {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  font-size: 2em;
+  text-align: left;
+  transform: translate(-50%, -50%);
+}
+</style>
+
+<div class="text-container">
+  <!--img src="/assets/images/mods.png" alt="Me" style="width:50%;"-->
+  <p>This is some text</p>
+</div>

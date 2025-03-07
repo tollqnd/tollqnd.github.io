@@ -31,7 +31,7 @@ feature_row4:
 ---
 I've been creating audio, mainly music, since I started messing around with FL Studio aged 13 or so. My self-taught skills were enough to study Electronic Music Production at university and my creativity and capability of making innovative compositions has only increased since then.
 <hr style="margin-bottom: 2em">
-{% include image_feature_row type="left" %} 
-{% include image_feature_row id="feature_row2" type="left" %}
+{% include image_feature_row type="left" %}
 {% include video_feature_row id="feature_row3" type="left" %}
+{% include image_feature_row id="feature_row2" type="left" %}
 {% include video_feature_row id="feature_row4" type="left" %}
