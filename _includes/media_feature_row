@@ -1,0 +1,46 @@
+{% if include.id %}
+  {% assign feature_row = page[include.id] %}
+{% else %}
+  {% assign feature_row = page.feature_row %}
+{% endif %}
+<hr style="margin-bottom: 1.5em">
+<div class="feature__wrapper" style="border-bottom: 0px; margin-bottom: 0em">
+  {% for f in feature_row %}
+    <div class="feature__item{% if include.type %}--{{ include.type }}{% endif %}">	  
+      <div class="archive__item">
+	    <div class="archive__item-body">
+          {% if f.title %}
+            <h2 class="archive__item-title">{{ f.title }}</h2>
+          {% endif %}
+          {% if f.excerpt %}
+            <div class="archive__item-excerpt">
+              {{ f.excerpt | markdownify }}
+            </div>
+          {% endif %}
+        </div>
+		{% if f.url %}
+		<a href="{{ f.url | relative_url }}" {% if f.new_tab %} target="_blank" {% endif %}>
+		{% endif %}
+        <div class="archive__item-teaser" style="margin-bottom: 1.5em">		    
+		  {% if f.image_path %}
+		  <img src="{{ f.image_path | relative_url }}"
+            alt="{% if f.alt %}{{ f.alt }}{% endif %}">
+		  {% endif %}
+		  {% if f.youtube_link %}
+            <iframe width="560" height="315" src="{{f.youtube_link}}"  title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          {% endif %}
+		  {% if f.sc_link %}
+		    <iframe width="100%" height="100" scrolling="no" frameborder="no" allow="autoplay" src="{{f.sc_link}}"></iframe>
+		  {% endif %}
+          {% if f.image_caption %}
+            <span class="archive__item-caption">{{ f.image_caption | markdownify | remove: "<p>" | remove: "</p>" }}</span>
+          {% endif %}
+        </div>
+		{% if f.url %}
+		  </a>
+		{% endif %}
+      </div>
+	  <hr style="margin-bottom: 1.5em; width: 100%">
+    </div>
+  {% endfor %}
+</div>

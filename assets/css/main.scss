@@ -9,3 +9,26 @@ $sans-serif: Ebrima;
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+
+.archive__item-test {
+  position: absolute;
+  bottom: 50%; /* Moves text halfway up */
+  left: 50%; /* Moves text halfway from the left */
+  transform: translate(-50%, 50%); /* Centers the text */
+  inset-inline-end: 0;
+  margin: 0 auto;
+  width: 100%;
+  height: fit-content;
+  padding: 90px 0px;
+  color: #fff;
+  font-size: $type-size-3;
+  background: rgba(35, 35, 35, 0.45);
+  text-align: center;
+  z-index: 5;
+  //border-radius: $border-radius 0 0 0;
+
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+}

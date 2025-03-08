@@ -1,0 +1,29 @@
+{% if include.id %}
+  {% assign feature_row = page[include.id] %}
+{% else %}
+  {% assign feature_row = page.feature_row %}
+{% endif %}
+
+<div class="feature__wrapper" style="border-bottom: 0px">
+  {% for f in feature_row %}
+    <div class="feature__item{% if include.type %}--{{ include.type }}{% endif %}" style="margin-bottom: 1em">	  
+      <div class="archive__item">
+        {% if f.image_path %}
+		  {% if f.url %}
+		  <a href="{{ f.url | relative_url }}" {% if f.new_tab %} target="_blank" {% endif %}>
+		  {% endif %}
+          <div class="archive__item-teaser">
+            <img src="{{ f.image_path | relative_url }}"
+                 alt="{% if f.alt %}{{ f.alt }}{% endif %}">
+            {% if f.title %}
+              <h3 class="archive__item-test">{{ f.title | markdownify | remove: "<p>" | remove: "</p>" }}</h3>
+            {% endif %}
+          </div>
+		  {% if f.url %}
+		    </a>
+		  {% endif %}
+        {% endif %}
+      </div>
+    </div>
+  {% endfor %}
+</div>

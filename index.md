@@ -21,4 +21,4 @@ feature_row:
     new_tab: true
 ---
 
-{% include image_feature_row %} {: .text-center}
+{% include image_feature_row_2 %}

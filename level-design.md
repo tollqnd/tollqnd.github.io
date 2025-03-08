@@ -30,5 +30,4 @@ feature_row:
     btn_class: "btn--inverse"
 ---
 I've spent a huge amount of time crafting competitive greyboxes in the Source 1 and 2 engines. For me, creating gameplay spaces is incredibly fulfilling, especially when it comes to engaging with players, gathering feedback, and making subsequent adjustments. There's just something so interesting about watching how others approach totally new areas.
-
 {% include better_feature_row type="left" %}
