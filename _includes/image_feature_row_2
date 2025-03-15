@@ -6,7 +6,7 @@
 
 <div class="feature__wrapper" style="border-bottom: 0px">
   {% for f in feature_row %}
-    <div class="feature__item{% if include.type %}--{{ include.type }}{% endif %}" style="margin-bottom: 1em">	  
+    <div class="feature__item{% if include.type %}--{{ include.type }}{% endif %}" style="margin-bottom: 0em">	  
       <div class="archive__item">
         {% if f.image_path %}
 		  {% if f.url %}
