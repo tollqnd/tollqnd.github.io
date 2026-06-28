@@ -13,7 +13,7 @@ feature_row:
 		<br> <br> The Raspberry Pi contained some code that would read its GPIO pins (where the Geiger counter was connected to) and send a packet to another computer on the same network. This computer would then generate a random MIDI note from a selection for each packet, and send it to FL Studio via a virtual MIDI cable for driving audio plugins.
 		<br> <br> The audio file here contains 20 minutes of arbitrarily-recorded audio."
     sc_link: "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/2020768049%3Fsecret_token%3Ds-iE4pbQhFO0h&color=%23ff5500&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false"
-  - title: "Random Glitch and Audiovisual Composition"
+  - title: "Glitch Audiovisual Composition"
     excerpt: "A track inspired by glitch music and Ryoji Ikeda. 'Technological' sounds like sine tones and clicks were used in combination with a system I made in FL Studio that would apply various glitch effects according to randomly-generated MIDI. Visuals were added that were synced automatically to these effects using ZGameEditor Visualizer."
     youtube_link: "https://www.youtube.com/embed/O3BAHHHX9IU?si=XhEXovafXMkEGgoD"
   - image_path: /assets/images/audio/water_track.png

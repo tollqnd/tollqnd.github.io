@@ -3,15 +3,20 @@
 {% else %}
   {% assign feature_row = page.feature_row %}
 {% endif %}
+<hr style="margin-bottom: 1.5em">
 <div class="feature__wrapper" style="border-bottom: 0px; margin-bottom: 0em">
   {% for f in feature_row %}
     <div class="feature__item{% if include.type %}--{{ include.type }}{% endif %}">	  
       <div class="archive__item">
 	    <div class="archive__item-body">
           {% if f.title %}
-		    {% assign type = include.type | default: 'center' %}
-            <h2 class="archive__item-title" {% if type == 'center' %} style="font-size: 20px;"{% endif %}>{{ f.title }}</h2>
-          {% endif %}          
+            <h2 class="archive__item-title">{{ f.title }}</h2>
+          {% endif %}
+          {% if f.excerpt %}
+            <div class="archive__item-excerpt">
+              {{ f.excerpt | markdownify }}
+            </div>
+          {% endif %}
         </div>
 		{% if f.url %}
 		<a href="{{ f.url | relative_url }}" {% if f.new_tab %} target="_blank" {% endif %}>
@@ -34,14 +39,8 @@
 		{% if f.url %}
 		  </a>
 		{% endif %}
-		{% if f.excerpt %}
-            <div class="archive__item-excerpt" style="font-size: 16px;">
-              {{ f.excerpt | markdownify }}
-            </div>
-        {% endif %}
       </div>
-	  
+	  <hr style="margin-bottom: 1.5em; width: 100%">
     </div>
   {% endfor %}
-<hr style="margin-bottom: 1.5em; width: 100%">
 </div>

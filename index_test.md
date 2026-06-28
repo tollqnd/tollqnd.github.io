@@ -12,11 +12,16 @@ feature_row_experimental:
   - image_path: /assets/images/audio/generative_radiation.png
     title: "Turning Radiation into Music"
     excerpt: "I used a Raspberry Pi, a Geiger counter and Max to make real-time generative music from ionising radioactive decay."
-    url: "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/2020768049%3Fsecret_token%3Ds-iE4pbQhFO0h&color=%23ff5500&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false"
-    new_tab: true
+    url: "/audio/"
   - title: "Glitch Audiovisual Composition"
     excerpt: "A track with synced visuals inspired by glitch music and Ryoji Ikeda, powered by random MIDI triggering different audio effects."
     youtube_link: "https://www.youtube.com/embed/O3BAHHHX9IU?si=XhEXovafXMkEGgoD"
+  - image_path: /assets/images/audio.png
+    title: "Lorem Ipsum"
+    excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel egestas nibh, sit amet blandit erat."
+  - image_path: /assets/images/audio.png
+    title: "Lorem Ipsum"
+    excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel egestas nibh, sit amet blandit erat."
 feature_row_game_audio:
   - image_path: /assets/images/honours_project_games.jpg
     title: "Music in Exploration Games"
@@ -28,10 +33,9 @@ feature_row_game_audio:
     youtube_link: "https://www.youtube.com/embed/mbm5gqHIZlU"
 feature_row_sound_design:
   - image_path: /assets/images/audio/water_track.png
-    title: "Track from Water"
+    title: "A Track Made of Water"
     excerpt: "A drum and bass/drumstep track I made solely out of processed field recordings of water."
     url: "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/2030992012%3Fsecret_token%3Ds-scXKJ1a6gaQ&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
-    new_tab: true
 feature_row_other_projects:
   - image_path: /assets/images/level_design.jpg
     title: "Level Design"
